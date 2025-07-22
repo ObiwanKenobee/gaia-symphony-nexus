@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Gaia Symphony Design System - Nature-Tech Harmony
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Nature Palette */
+    --background: 120 20% 98%;
+    --foreground: 120 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 120 25% 97%;
+    --card-foreground: 120 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 120 25% 98%;
+    --popover-foreground: 120 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Emerald Primary - Living Green */
+    --primary: 158 64% 52%;
+    --primary-foreground: 120 25% 98%;
+    --primary-glow: 158 76% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Earth Secondary - Grounded Brown */
+    --secondary: 25 35% 35%;
+    --secondary-foreground: 120 25% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Earth Tones */
+    --muted: 120 15% 92%;
+    --muted-foreground: 120 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Bio-luminescent Accent */
+    --accent: 200 85% 60%;
+    --accent-foreground: 120 25% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Sunset Gold */
+    --gold: 45 95% 65%;
+    --gold-foreground: 120 15% 15%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* System Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 120 25% 98%;
 
-    --radius: 0.5rem;
+    --border: 120 15% 85%;
+    --input: 120 15% 90%;
+    --ring: 158 64% 52%;
+
+    /* Sacred Geometry */
+    --radius: 0.75rem;
+
+    /* Gaia-specific Design Tokens */
+    --gradient-aurora: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--gold)));
+    --gradient-forest: linear-gradient(180deg, hsl(var(--primary)) 0%, hsl(120 45% 25%) 100%);
+    --gradient-earth: linear-gradient(45deg, hsl(var(--secondary)), hsl(25 45% 45%));
+    --gradient-bio: linear-gradient(90deg, hsl(var(--accent)) 0%, hsl(var(--primary-glow)) 100%);
+    
+    /* Sacred Shadows */
+    --shadow-organic: 0 8px 32px -8px hsl(var(--primary) / 0.2);
+    --shadow-depth: 0 16px 64px -16px hsl(var(--secondary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    
+    /* Smooth Transitions */
+    --transition-organic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-flow: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 
     --sidebar-background: 0 0% 98%;
 

@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +53,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					foreground: 'hsl(var(--gold-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +67,25 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-aurora': 'var(--gradient-aurora)',
+				'gradient-forest': 'var(--gradient-forest)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-bio': 'var(--gradient-bio)'
+			},
+			boxShadow: {
+				'organic': 'var(--shadow-organic)',
+				'depth': 'var(--shadow-depth)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'organic': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'flow': 'cubic-bezier(0.25, 0.8, 0.25, 1)'
+			},
+			fontFamily: {
+				'wisdom': ['Playfair Display', 'serif'],
+				'nature': ['Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
